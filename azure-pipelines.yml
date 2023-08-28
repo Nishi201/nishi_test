@@ -1,7 +1,7 @@
 jobs:
 - job: 'Test'
-  pool:
-    vmImage: 'nodepoolacr' # other options: 'macOS-latest', 'windows-latest'
+  pool: ubuntu_self
+#    vmImage: 'nodepoolacr' # other options: 'macOS-latest', 'windows-latest'
   strategy:
     matrix:
       Python38:
